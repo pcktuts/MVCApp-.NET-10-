@@ -1,9 +1,10 @@
-﻿<h2>Students🎉</h2>
-@model List<string>
+﻿@using MVCApp.Model
+<h2>Students🎉</h2>
+@model List<Student>
 
     <ul>
         @foreach(var s in Model)
     {
-        <li>@s</li>
+        <li>@s.Name</li>
     }
 </ul>

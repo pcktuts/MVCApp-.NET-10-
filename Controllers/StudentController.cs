@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MVCApp.Model;
 
 namespace MVCApp.Controllers
 {
@@ -6,7 +7,11 @@ namespace MVCApp.Controllers
     {
         public IActionResult Index()
         {
-            var students = new List<string> { "John", "Sara" };
+            var students = new List<Student>
+            {
+                new Student { Name= "John"},
+                new Student { Name = "Sara"}
+            };
             return View(students);
         }
     }

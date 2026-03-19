@@ -5,7 +5,7 @@ var app = builder.Build();
 app.UseRouting();
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}"
+    pattern: "{controller=Student}/{action=Index}/{id?}"
 );
 
 app.Run();
