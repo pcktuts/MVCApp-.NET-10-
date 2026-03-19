@@ -6,7 +6,8 @@ namespace MVCApp.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var students = new List<string> { "John", "Sara" };
+            return View(students);
         }
     }
 }
