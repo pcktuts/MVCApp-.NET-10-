@@ -23,7 +23,7 @@ namespace MVCApp.Controllers
         [HttpPost]
         public IActionResult Create(Student student)
         {
-            return Content($"Recieved: {student.Name}");
+            return RedirectToAction("Index");
         }
     }
 }
