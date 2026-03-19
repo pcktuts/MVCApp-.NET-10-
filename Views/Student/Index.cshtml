@@ -1,10 +1,14 @@
 ﻿@using MVCApp.Model
-<h2>Students🎉</h2>
 @model List<Student>
+<h2 class="mb-4">Student List</h2>
 
-    <ul>
-        @foreach(var s in Model)
+<a asp-action="Create" class="btn btn-success mb-3">+ Add Student</a>
+
+<ul class="list-group">
+    @foreach (var s in Model)
     {
-        <li>@s.Name</li>
+        <li class="list-group-item">
+            @s.Name
+        </li>
     }
 </ul>
