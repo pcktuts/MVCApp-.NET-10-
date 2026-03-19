@@ -19,5 +19,11 @@ namespace MVCApp.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public IActionResult Create(Student student)
+        {
+            return Content($"Recieved: {student.Name}");
+        }
     }
 }
