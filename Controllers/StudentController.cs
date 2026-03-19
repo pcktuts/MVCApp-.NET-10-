@@ -23,6 +23,7 @@ namespace MVCApp.Controllers
         [HttpPost]
         public IActionResult Create(Student student)
         {
+            TempData["message"] = "Student added successfully!";
             return RedirectToAction("Index");
         }
     }
